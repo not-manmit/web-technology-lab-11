@@ -1,38 +1,85 @@
+:root {
+  --bg-color: #0a0a0a;
+  --card-bg: #111111;
+  --accent: #ffffff;
+  --text-main: #ededed;
+  --text-dim: #a1a1a1;
+  --border: #333333;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: var(--bg-color);
+  color: var(--text-main);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Header Section */
+.App-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  margin-bottom: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-header p {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+}
+
+/* The Student Card - Part C/D */
+.student-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  width: 100%;
+  max-width: 400px;
+  margin: 40px 0;
+  transition: border-color 0.2s ease;
+}
+
+.student-card:hover {
+  border-color: #555555;
+}
+
+.student-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+
+.student-card p {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  font-size: 0.9rem;
+}
+
+.student-card p strong {
+  color: var(--text-dim);
+  font-weight: 400;
+}
+
+/* The Action Button - Part E */
+.my-button {
+  background-color: var(--accent);
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.my-button:hover {
+  opacity: 0.9;
 }

@@ -1,22 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Student from './components/Student'; // Importing Part C
 
 function App() {
+  const showAlert = () => {
+    alert("Welcome to React Learning!"); // Part E Interaction
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>My First React App</h1>
+        <p>Course: SE Sem IV</p>
+        <p>I am learning how to build modern UIs with React components.</p>
+        
+        {/* Using the Student Component */}
+        <Student /> 
+
+        {/* Part E: Button */}
+        <button onClick={showAlert} className="my-button">
+          Click Me!
+        </button>
       </header>
     </div>
   );
