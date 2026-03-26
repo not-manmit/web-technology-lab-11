@@ -2,6 +2,10 @@
 
 A simple React application built as part of a Structured Programming assignment for SE Sem IV. This project demonstrates fundamental React concepts including components, state management, and user interactions.
 
+## Learning Reflection
+
+In this assignment, I learned how to set up a modern web development environment using Node.js and create-react-app. I gained a fundamental understanding of JSX, which allowed me to design the user interface by combining HTML-like syntax with JavaScript logic. By creating the Student.js file, I practiced building functional components, which are the building blocks of any React application. I also learned how to manage application state and interactivity by implementing an event handler for the button click. Finally, I explored how to use CSS to style components, ensuring a responsive and organized layout.
+
 ## Project Overview
 
 This application serves as an introduction to React development, showcasing:
